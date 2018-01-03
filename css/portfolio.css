@@ -1,0 +1,18 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+.navbar-inverse {
+    background-color: rgba(0, 0, 0, 0.856);
+    border-radius: 0;
+    border: none;
+    margin-bottom: 0;
+  }
+  .navbar-brand a{
+      color: grey;
+  }
+.navbar-nav {
+    display: inline-block;
+    float: right;
+    vertical-align: top;
+    list-style: none;
+  }
