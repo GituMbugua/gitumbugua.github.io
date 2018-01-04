@@ -22,40 +22,63 @@
       </ul>
     </nav>
 
-    <div class="about" id="about">
-      <h1>About Me</h1>
-      <p>As a web developer, I have built some interactive applications. I'm keen on structure and simplicity in both design and code. I believe in being intentional about everything I do.</p>
-      <p>Some of my strengths are creative design, front-end development, and back-end development. I have worked with different languages and frameworks such as HTML5, CSS3,and Javascript for front-end, Django and Python for back-end, and other deployment platforms and databases like Firebase, Heroku, and PostgreSQL.</p>
+    <div class="container-fluid" id="about">
+      <div class="row about-row">
+        <div class="image-container col-sm-12 col-md-4 col-lg-4">
+            <img src="img/me.jpg" alt="Gitu Mbugua" class="picture img-responsive">
+        </div>
+        <div class="about col-sm-12 col-md-4 col-lg-8">
+          <h1>About Me</h1>
+          <p>As a web developer, I have built some interactive applications. I'm keen on structure and simplicity in both design and code. I believe in being intentional about everything I do.</p>
+          <p>Some of my strengths are creative design, front-end development, and back-end development. I have worked with different languages and frameworks such as HTML5, CSS3,and Javascript for front-end, Django and Python for back-end, and other deployment platforms and databases like Firebase, Heroku, and PostgreSQL.</p>
+        </div>
+      </div>
     </div>
-
-    <div class="projects" id="projects">
-      <div class="container-fluid">
-        <div class="row">
-          <h1 class="projects-title">Projects</h1>
-          <div class="col-md-4">
-              <div class="well well-default">
-                <div class="well-heading">
-                  <img src="img/leaf.png" alt="Toa Taka Project" class="img-responsive leaf">
+    <div class="m-scene" id="main">
+      <div class="m-header scene_element scene_element--fadein">
+        <div class="projects" id="projects">
+          <div class="container-fluid">
+            <div class="row">
+              <h1 class="projects-title">Projects</h1>
+                <div class="col-md-4">
+                    <div class="well well-default">
+                      <div class="well-heading">
+                        <img src="img/leaf.png" alt="Toa Taka Project" class="img-responsive leaf">
+                      </div>
+                      <div class="well-body">
+                        <h4>Toa Taka</h4>
+                        <p>This website features environmental cleaning projects. Its aim is to rally people to clean up the environment</p>
+                      </div>
+                    </div>
                 </div>
-                <div class="well-body">
-                  <h4>Toa Taka</h4>
-                  <p>This website features environmental cleaning projects. Its aim is to rally people to clean up the environment</p>
+              <div class="col-md-4">
+                  <div class="well well-default">
+                    <div class="well-heading">
+                      <img src="img/meal-tracker.png" alt="Meal Tracker Project" class="img-responsive meal">
+                    </div>
+                    <div class="well-body">
+                      <h4>Meal Tracker</h4>
+                      <p>A quick and simple application build with AngularJS with a neat and easy-to-use interface for logging calories consumed in a day</p>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                <div class="well well-default">
+                  <div class="well-heading">
+                    <img src="img/camera.png" alt="Unsplash Clone Project" class="img-responsive camera">
+                  </div>
+                  <div class="well-body">
+                    <h4>Unsplash Clone</h4>
+                    <p>This Django web application is a free image sharing platform. It has a simple, elegant design and is fully responsive.</p>
+                  </div>
                 </div>
               </div>
-          </div>
-          <div class="col-md-4">
-              <img src="img/meal-tracker.png" alt="Meal Tracker Project" class="img-responsive">
-              <h4>Meal Tracker</h4>
-              <p>A quick and simple application build with AngularJS with a neat and easy-to-use interface for logging calories consumed in a day</p>
-          </div>
-          <div class="col-md-4">
-              <img src="img/camera.png" alt="Unsplash Clone Project" class="img-responsive camera">
-              <h4>Unsplash Clone</h4>
-              <p>This Django web application is a free image sharing platform. It has a simple, elegant design and is fully responsive.</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    
 
     <div class="contact" id="contact">
       <div class="container contact-container">
@@ -63,17 +86,20 @@
         <hr id="title">
   
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-          <h3>Email</h3>
+          <h2>Email</h2>
           <hr id="account">
-          <a href="https://github.com/GituMbugua"><p id="account-link">gmbugua38@gmail.com</p></a>
+          <a href="mailto:gmbugua38@gmail.com"><h4 id="account-link">gmbugua38@gmail.com</h4></a>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-          <h3>Github</h3>
+          <h2>Github</h2>
           <hr id="account">
-          <a href="https://github.com/GituMbugua"><p id="account-link">https://github.com/GituMbugua</p></a>
+          <a href="https://github.com/GituMbugua"><h4 id="account-link">https://github.com/GituMbugua</h4></a>
         </div>
       </div>
     </div>
+    <footer class="footer">
+      <p>&copy Gitu Mbugua 2018</p>
+    </footer>
     <script src="bootstrap/js/jquery.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>

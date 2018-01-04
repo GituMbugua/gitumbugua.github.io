@@ -15,11 +15,14 @@ body {
   text-align: center;
   color: whitesmoke;
   margin-bottom: 2%;
-  padding: 5%;
+  padding: 15%;
 }
 .home h1 {
   line-height: 120px;
-  font-size: 5em;
+  font-size: 6em;
+}
+.home h2 {
+  margin-bottom: 2%; 
 }
 .picture {
   float: none;
@@ -69,9 +72,7 @@ hr {
   z-index: 1;
   margin: 2%;
 }
-.projects {
-  height: 700px;
-}
+
 .projects-title {
   text-align: center;
   font-size: 3em;
