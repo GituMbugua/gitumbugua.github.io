@@ -92,10 +92,10 @@ body, html {
 
 /* about */
 .about-row {
-  background-color: rgb(18, 18, 71);
+  /* background-color: rgb(18, 18, 71); */
 }
 .about {
-  color: whitesmoke;
+  /* color: whitesmoke; */
   padding-bottom: 0;
 }
 .image-container {

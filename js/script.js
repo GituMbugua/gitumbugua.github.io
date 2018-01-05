@@ -1,6 +1,9 @@
 // smooth scrolling
 $(document).ready(function() {
-  
+
+  // navbar initially hidden
+  $('.navbar').hide();
+
   var scrollLink = $('.scroll');
   
   // Smooth scrolling
@@ -23,12 +26,24 @@ $(document).ready(function() {
         $(this).parent().addClass('active');
         $(this).parent().siblings().removeClass('active');
       }
-    })
+
+      // navbar fade-in/fade-out
+      if (scrollbarLocation > 600) {
+        $('.navbar').fadeIn();
+      } else {
+        $('.navbar').fadeOut();
+      }
+    });
     
-  })
+  });
+  // Navbar popup
+  $(window).on('scroll', function() {
+    
+  });
   
-})
+});
 // end of smooth scrolling
+
 
 // word substitution
 var length = $(".scroll-words").length;
