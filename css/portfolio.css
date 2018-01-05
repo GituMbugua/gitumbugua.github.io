@@ -60,6 +60,38 @@
 }
 }
 
+/* media queries */
+@media screen and (max-width: 1400px) {
+  .about-row {
+    background-color: rgb(18, 18, 71);
+  }
+  .about {
+    color: whitesmoke;
+    padding-bottom: 0;
+  }
+  
+  .image-container {
+    padding: 0;
+  }
+  .image-container img {
+      margin: 0;
+  }
+  .about h1 {
+    padding-top: 2%;
+    margin-top: 0;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2%;
+  }
+  .about p {
+    font-size: 24px;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+  }
+}
+
+
 body {
     font-family: 'Raleway', sans-serif;
 }
@@ -81,6 +113,7 @@ body {
 .navbar-nav h4 {
     color: whitesmoke;
   }
+  
   .about-row {
     background-color: rgb(18, 18, 71);
   }
@@ -88,7 +121,6 @@ body {
     color: whitesmoke;
     padding-bottom: 0;
   }
-  
   .image-container {
     padding: 0;
   }

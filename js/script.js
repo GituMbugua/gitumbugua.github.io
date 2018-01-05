@@ -1,6 +1,34 @@
-var images = ['comp-blur.png', 'city-blur.jpg', 'office-blur.jpg'];
-// $('body').css({'background-image': 'url(img/' + images[Math.floor(Math.random() *      images.length)] + ')'});
-
+// smooth scrolling
+$(document).ready(function() {
+  
+  var scrollLink = $('.scroll');
+  
+  // Smooth scrolling
+  scrollLink.click(function(e) {
+    e.preventDefault();
+    $('body,html').animate({
+      scrollTop: $(this.hash).offset().top
+    }, 1000 );
+  });
+  
+  // Active link switching
+  $(window).scroll(function() {
+    var scrollbarLocation = $(this).scrollTop();
+    
+    scrollLink.each(function() {
+      
+      var sectionOffset = $(this.hash).offset().top - 20;
+      
+      if ( sectionOffset <= scrollbarLocation ) {
+        $(this).parent().addClass('active');
+        $(this).parent().siblings().removeClass('active');
+      }
+    })
+    
+  })
+  
+})
+// end of smooth scrolling
 
 // word substitution
 var length = $(".scroll-words").length;
