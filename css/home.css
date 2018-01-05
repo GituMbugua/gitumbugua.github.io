@@ -27,7 +27,7 @@ body, html {
 }
 .home-hr {
   transform: dotted;
-  width: 50%;
+  width: 65%;
 }
 .animation {
   vertical-align: sub;
@@ -60,7 +60,7 @@ body, html {
 
 /* navbar */
 .navbar {
-  background-color: rgba(0, 0, 0, 0.856);
+  background-color: rgba(49, 49, 49, 0.856);
   border-radius: 0 0 5px 5px;
   border: none;
   width: 84%;
@@ -93,20 +93,18 @@ body, html {
 /* about */
 .about-row {
   /* background-color: rgb(18, 18, 71); */
+  padding: 6% 0 0 0;
 }
 .about {
   /* color: whitesmoke; */
-  padding-bottom: 0;
+  padding: 5% 0 5% 0;
 }
 .image-container {
-  padding: 0;
+  padding: 5% 0 0 8%;
 }
 .image-container img {
   margin: 0;
-  position: inherit;
-}
-.about {
-  position: inherit;
+  border-radius: 50%;
 }
 .about h1 {
   padding-top: 2%;
@@ -120,6 +118,66 @@ body, html {
   margin-left: 10%;
   margin-right: 10%;
   text-align: center;
+}
+
+.skills-row {
+  padding: 0 0 6% 0;
+}
+.skills div {
+  width: 100%;
+  background: rgb(49, 49, 49);
+  height: 24px;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+}
+.python-bar::before {
+  content: '';
+  position: absolute;
+  width: 75%;
+  height: 24px;
+  left: 0;
+  background: rgb(216, 215, 215);
+}
+.html-bar::before {
+  content: '';
+  position: absolute;
+  width: 90%;
+  height: 24px;
+  left: 0;
+  background: rgb(216, 215, 215);
+}
+.css-bar::before {
+  content: '';
+  position: absolute;
+  width: 80%;
+  height: 24px;
+  left: 0;
+  background: rgb(216, 215, 215);
+}
+.django-bar::before {
+  content: '';
+  position: absolute;
+  width: 70%;
+  height: 24px;
+  left: 0;
+  background: rgb(216, 215, 215);
+}
+.postgres-bar::before {
+  content: '';
+  position: absolute;
+  width: 70%;
+  height: 24px;
+  left: 0;
+  background: rgb(216, 215, 215);
+}
+.heroku-bar::before {
+  content: '';
+  position: absolute;
+  width: 75%;
+  height: 24px;
+  left: 0;
+  background: rgb(216, 215, 215);
 }
 /* end */
 

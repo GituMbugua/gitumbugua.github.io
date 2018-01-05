@@ -4,6 +4,9 @@ $(document).ready(function() {
   // navbar initially hidden
   $('.navbar').hide();
 
+  // display tooltip on page load
+  $('.tooltip').tooltip('show');
+
   var scrollLink = $('.scroll');
   
   // Smooth scrolling
@@ -28,7 +31,7 @@ $(document).ready(function() {
       }
 
       // navbar fade-in/fade-out
-      if (scrollbarLocation > 600) {
+      if (scrollbarLocation > 550) {
         $('.navbar').fadeIn();
       } else {
         $('.navbar').fadeOut();
