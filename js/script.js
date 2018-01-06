@@ -71,3 +71,15 @@ u++;
 }
 
 // end of word substitution
+
+$(window).on("scroll touchmove", function() {
+  if ($(document).scrollTop() >= $("#one").position().top) {
+    $('.projects').css('background', $("#one").attr("data-color"));
+  };
+  if ($(document).scrollTop() > $("#two").position().top) {
+    $('.projects').css('background', $("#two").attr("data-color"))
+  };
+  if ($(document).scrollTop() > $("#three").position().top) {
+    $('.projects').css('background', $("#three").attr("data-color"))
+  };
+});

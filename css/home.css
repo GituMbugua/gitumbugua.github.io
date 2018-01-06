@@ -5,29 +5,77 @@ body, html {
   margin: 0;
   padding: 0;
 }
+/* navbar */
+.navbar {
+  background-color: rgba(49, 49, 49, 0.89);
+  border-radius: 0;
+  border: none;
+  width: 100%;
+  /* margin: 0 8% 0 8%; */
+  position: fixed;
+  z-index: 1000;
+}
+.navbar-brand {
+  padding: 10px 15px;
+}
+.navbar-brand a {
+    color: whitesmoke;
+}
+.navbar-nav {
+  display: inline-block;
+  float: right;
+  vertical-align: top;
+  list-style: none;
+}
+.navbar-nav .nav-item.active {
+  background: red;
+}
+.navbar-nav h4 {
+  color: whitesmoke;
+}
+.navbar-nav>li>a {
+  line-height: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* end */
+
 /* home section */
 .home {
-  background: url("../img/scene-blur.jpg") no-repeat;
+  background: url("https://daks2k3a4ib2z.cloudfront.net/58cd58bedf096f593816e18e/58e57fa565e7cf27340e7e98_notepad-bg.jpg") no-repeat;
   background-size: 900px;
   background-size: cover;
   background-attachment: fixed;
   height: 100%;
   width: 100%;
   overflow: hidden;
+  z-index: -1;
+}
+.home-text {
+  position: relative;
+  z-index: 1;
+  padding: 15%;
   text-align: center;
   color: whitesmoke;
-  padding: 15%;
 }
 .home h1 {
   line-height: 120px;
-  font-size: 6em;
+  font-size: 5em;
+  text-transform: uppercase;
 }
 .home h2 {
-  margin-bottom: 2%; 
+  margin-bottom: 2%;
 }
 .home-hr {
   transform: dotted;
   width: 65%;
+}
+.home-overlay {
+  background-color: rgba(0, 0, 0, 0.164);
+  position: absolute;
+  height: inherit;
+  width: 100%;
+  z-index: 0;
 }
 .animation {
   vertical-align: sub;
@@ -45,58 +93,31 @@ body, html {
 }
 .link-buttons button {
   background-color: transparent;
-  border: 5px whitesmoke;
   border-radius: 0;
   margin: 1%;
   color: whitesmoke;
   font-size: 25px;
 }
 .link-buttons button:hover {
-  border-bottom: 1px solid whitesmoke;
+  border-bottom: 2px solid whitesmoke;
+  transition: 0.3s;
+  color: white;
+}
+.link-buttons button:active {
+  border-bottom: 2px solid whitesmoke;
   transition: 0.3s;
   color: white;
 }
 /* end */
 
-/* navbar */
-.navbar {
-  background-color: rgba(49, 49, 49, 0.856);
-  border-radius: 0 0 5px 5px;
-  border: none;
-  width: 84%;
-  margin: 0 8% 0 8%;
-  position: fixed;
-  z-index: 1000;
-}
-.navbar-brand {
-  padding: 10px 15px;
-}
-.navbar-brand a {
-    color: whitesmoke;
-}
-.navbar-nav {
-  display: inline-block;
-  float: right;
-  vertical-align: top;
-  list-style: none;
-}
-.navbar-nav h4 {
-  color: whitesmoke;
-}
-.navbar-nav>li>a {
-  line-height: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-/* end */
-
 /* about */
 .about-row {
-  /* background-color: rgb(18, 18, 71); */
-  padding: 6% 0 0 0;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  padding: 3% 0 0 0;
 }
 .about {
-  /* color: whitesmoke; */
   padding: 5% 0 5% 0;
 }
 .image-container {
@@ -120,6 +141,9 @@ body, html {
   text-align: center;
 }
 
+.skills-container {
+  padding-top: 2%;
+}
 .skills-row {
   padding: 0 0 6% 0;
 }
@@ -182,64 +206,121 @@ body, html {
 /* end */
 
 /* projects */
+.parallax-layer.one {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.parallax-layer.two {
+  -webkit-transform: translateZ(-1px);
+  transform: translateZ(-1px);
+}
+.projects {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background: rgb(242, 242, 230);
+  transition: all 1500ms;
+  will-change: background;
+  position: relative;
+  bottom: -340px;
+}
 .projects h1 {
   text-align: center;
   text-transform: uppercase;
 }
-.projects img {
-  float: none;
-  margin: auto;
+.project-row {
+  padding: 10% 0 10% 0;
 }
-.well {
-    background: transparent;
-    border: none;
-}
-.well-heading {
-    height: 200px;
-    margin: auto;
-}
-.leaf {
-  max-width: 250px;
-  height: 150px;
+.traffic {
+  max-width: 300px;
+  height: 300px;
 }
 .meal {
-  max-width: 250px;
-  height: 150px;  
+  max-width: 300px;
+  height: 300px; 
+  float: right;
 }
 .camera {
-  max-width: 250px;
-  height: 150px;
+  max-width: 300px;
+  height: 300px;
+}
+.project-title {
+  font-size: 4rem;
+  font-weight: bold;
+}
+.project-role {
+  font-size: 25px;
+  font-style: italic;
+}
+.project-description {
+  font-size: 25px;
+}
+.project-languages {
+  font-size: 20px;
 }
 /* end */
 
 /* contact */
 .contact {
-  background-color: rgb(49, 49, 49);
+  background: url("../img/social.jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed;
   color: whitesmoke;
-  height: 400px;
+  height: 840px;
+  padding-top: 340px;
+  position: relative;
+  z-index: -1;
 }
 .contact-container {
-  padding-top: 2%;
+  padding: 4% 0;
+  height: 100%;
+  background-color: rgba(70, 70, 70, 0.5);
 }
 .contact h1 {
   text-align: center;
   text-transform: uppercase;
-  font-size: 3em;
+  font-size: 4em;
 }
-.contact #email {
-    text-align: center;
-    color: rgb(246, 221, 188);
+.contact h2 {
+  margin-top: 4%;
 }
 .contact #title {
     width: 20%;
 }
-.contact #account-link {
-    color: rgb(246, 221, 188);
+.contact button {
+  background-color: transparent;
+  border: 0;  
+  border-radius: 0;
+  margin-left: 36%;;
+  color: rgb(255, 225, 131);
+  font-size: 25px;
+  padding-bottom: 1%;
 }
-.contact #account-link:hover {
-    color: white;
-    text-decoration: none;
+.contact button:hover {
+  background-color: transparent;
+  border-bottom: 2px solid whitesmoke;
+  transition: 0.3s;
+  color: white;
 }
+.social {
+  margin: 5% 0 5% 0;
+  padding: 0 0 0 42.5%;
+}
+.social a {
+  float: none;
+}
+.social img {
+  display: inline-block;
+  margin-left: 2%;
+  margin-right: 2%;
+  height: 50px;
+  text-align: center;
+}
+/* .social .github {
+  height: 75px;
+}
+.social .linkedin {
+  height: 80px;
+} */
 /* end */
 
 /* footer */
@@ -256,5 +337,15 @@ body, html {
 }
 .footer p {
     padding-top: 1%;
+}
+/* end */
+
+/* modal */
+.modal-dialog {
+  width: 80%;
+}
+button.close {
+  font-size: 45px;
+  padding: 0 1%;
 }
 /* end */
