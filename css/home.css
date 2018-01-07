@@ -7,10 +7,6 @@ body, html {
 }
 /* general css */
 /* =================================================================================================================== */
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 2000px)
-  and (-webkit-min-device-pixel-ratio: 1) { 
     /* navbar */
     .navbar {
       background-color: rgba(49, 49, 49, 0.89);
@@ -41,12 +37,14 @@ body, html {
       padding-top: 10px;
       padding-bottom: 10px;
     }
+    .nav-item.active {
+      background: rgba(133, 133, 133, 0.89);
+    }
     /* end */
     
     /* home section */
     .home {
       background: url("../img/bg/desk-bg.jpg") no-repeat;
-      background-size: 900px;
       background-size: cover;
       background-attachment: fixed;
       height: 100%;
@@ -129,6 +127,8 @@ body, html {
       padding: 5% 0 5% 0;
     }
     #about {
+      position: relative;
+      margin-top: -340px;
       bottom: -340px;
     }
     .image-container {
@@ -155,6 +155,10 @@ body, html {
 
     .skills-container {
       padding-top: 2%;
+    }
+    .skills-container h2 {
+      text-align: center;
+      text-transform: uppercase;
     }
     .skills-row {
       padding: 0 0 6% 0;
@@ -222,10 +226,8 @@ body, html {
       padding-top: 5%;
       padding-bottom: 5%;
       position: relative;
-      /* background: rgb(242, 242, 230); */
       transition: all 1500ms;
       will-change: background;
-      margin-top: -340px;
       bottom: -340px;
     }
     .projects h1 {
@@ -296,7 +298,9 @@ body, html {
       background-color: transparent;
       border: 0;  
       border-radius: 0;
-      margin-left: 36%;;
+      margin: auto;
+      display: flex;
+      justify-content: center;
       color: rgb(255, 225, 131);
       font-size: 25px;
       padding-bottom: 1%;
@@ -349,348 +353,463 @@ body, html {
       padding: 0 1%;
     }
     /* end */
-}
-/* =================================================================================================================== */
+
+/* ======================= media queries ============================================================================================ */
+
 @media screen
-  and (min-device-width: 800px) 
+  and (min-device-width: 992px) 
   and (max-device-width: 1199px)
   and (-webkit-min-device-pixel-ratio: 1) {
-    /* navbar */
-    .navbar {
-      background-color: rgba(49, 49, 49, 0.89);
-      border-radius: 0;
-      border: none;
-      width: 100%;
-      /* margin: 0 8% 0 8%; */
-      position: fixed;
-      z-index: 1000;
+    /* home */
+    .home-text {
+      padding-top: 20%;
     }
-    .navbar-brand {
-      padding: 10px 15px;
+    /* end */
+
+    /* projects */
+    .traffic {
+      max-width: 250px;
+      height: 250px;
     }
-    .navbar-brand a {
-      color: whitesmoke;
-    }
-    .navbar-nav {
-      display: inline-block;
+    .meal {
+      max-width: 250px;
+      height: 250px; 
       float: right;
-      vertical-align: top;
-      list-style: none;
     }
-    .navbar-nav h4 {
-      color: whitesmoke;
+    .camera {
+      max-width: 250px;
+      height: 250px;
     }
-    .navbar-nav>li>a {
-      line-height: 15px;
-      padding-top: 10px;
-      padding-bottom: 10px;
+    /* end */
+
+    /* contact */
+    .contact h1 {
+      font-size: 3.5em;
+    }
+    .contact h2 {
+      font-size: 2em;
+    }
+    .contact #title {
+      width: 25%;
+    }
+    .contact button {
+      margin: auto;
+      display: flex;
+      justify-content: center;
+    }
+    .social {
+      padding: 0 0 0 41%;
+    }
+    /* end */
+ }
+ @media screen
+  and (min-device-width: 768px) 
+  and (max-device-width: 991px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    /* home */
+    .home-text {
+      padding-top: 25%;
+    }
+    .home h1 {
+      font-size: 4.5em;
+    }
+    /* end */
+
+    /* about */
+    .image-container {
+      padding: 1%;
+    }
+    .image-container img {
+      margin: auto;
+    }
+    /* end */
+
+    /* projects */
+    .project-row img {
+      margin: auto;
+    }
+    .project-info {
+      margin-top: 4%;
+    }
+    .traffic {
+      max-width: 200px;
+      height: 200px;
+    }
+    .meal {
+      max-width: 200px;
+      height: 200px; 
+      float: none;
+    }
+    .camera {
+      max-width: 200px;
+      height: 200px;
+    }
+    /* end */
+
+    /* contact */
+    .contact h1 {
+      font-size: 5rem;
+    }
+    .contact h2 {
+      font-size: 25px;
+    }
+    .contact #title {
+      width: 30%;
+    }
+    .contact button {
+      margin: auto;
+      display: flex;
+      justify-content: center;
+    }
+    .social {
+      padding: 0 0 0 40%;
     }
     /* end */
     
-    /* home section */
-    .home {
-      background: url("../img/bg/desk-bg.jpg") no-repeat;
-      background-size: 900px;
-      background-size: cover;
-      background-attachment: fixed;
-      height: 100%;
+    /* footer */
+    .footer p {
+      padding-top: 2%;
+    }
+    /* end */
+  }
+
+  @media screen
+  and (min-device-width: 442px) 
+  and (max-device-width: 767px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    /* navbar */
+    .navbar-collapse {
+      padding: 0;
+    }
+    .navbar-collapse>.navbar-nav {
       width: 100%;
-      overflow: hidden;
-      z-index: -1;
-    }
-    .home-text {
-      position: relative;
-      z-index: 1;
-      padding: 15%;
       text-align: center;
-      color: whitesmoke;
+      margin: auto;
     }
-    #web-dev {
-      color: rgb(255, 225, 131);
-      font-weight: 500;
+    /* end */
+
+     /* about */
+     .about-row {
+       margin: auto;
+     }
+     .image-container {
+      padding: 1%;
+      margin-bottom: 4%;
+    }
+    .image-container img {
+      margin: auto;
+    }
+    /* end */
+
+    /* projects */
+    .projects h1 {
+      font-size: 4rem
+    }
+    .project-row img {
+      margin: auto;
+    }
+    .project-info {
+      margin-top: 4%;
+    }
+    .traffic {
+      max-width: 200px;
+      height: 200px;
+    }
+    .meal {
+      max-width: 200px;
+      height: 200px; 
+      float: none;
+    }
+    .camera {
+      max-width: 200px;
+      height: 200px;
+    }
+    .project-title {
+      font-size: 3.5rem;
+    }
+    .project-role {
+      font-size: 20px;
+      font-style: italic;
+    }
+    .project-description {
+      font-size: 20px;
+    }
+    .project-languages {
+      font-size: 18px;
+    }
+    /* end */
+
+    /* contact */
+    .contact h1 {
+      font-size: 3.5em;
+    }
+    .contact h2 {
+      /* font-size: em; */
+    }
+    .contact #title {
+      width: 30%;
+    }
+    .contact button {
+      margin: auto;
+      display: flex;
+      justify-content: center;
+    }
+    .social {
+      padding: 0 0 0 39%;
+    }
+    /* end */
+
+    /* footer */
+    .footer p {
+      padding-top: 2%;
+    }
+    /* end */
+  }
+
+  @media screen
+  and (min-device-width: 420px) 
+  and (max-device-width: 699px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    /* navbar */
+    .navbar-collapse {
+      padding: 0;
+    }
+    .navbar-collapse>.navbar-nav {
+      width: 100%;
+      text-align: center;
+      margin: auto;
+    }
+    /* end */
+
+    /* home */
+    .home {
+      height: 450px;
+      background-size: 180%;
+      background-position-x: 50%;
+    }
+    .home-hr.top {
+      display: none;
     }
     .home h1 {
-      line-height: 120px;
-      font-size: 5em;
-      text-transform: uppercase;
-      font-weight: 500;
+      font-size: 3em;
+      line-height: 80px;
     }
     .home h2 {
-      margin-bottom: 2%;
-    }
-    .home-hr {
-      transform: dotted;
-      width: 65%;
-    }
-    .home-overlay {
-      background-color: rgba(0, 0, 0, 0.3);
-      position: absolute;
-      height: inherit;
-      width: 100%;
-      z-index: 0;
-    }
-    .animation {
-      vertical-align: sub;
-      height: 1em;
-      overflow: hidden;
-      display: inline-block;
-      line-height: 2em;
-    }
-    .scroll-list {
-      list-style: none;
-      padding-left: 2%;
-    }
-    .link-buttons {
-      width: inherit;
-    }
-    .link-buttons button {
-      background-color: transparent;
-      border-radius: 0;
-      margin: 1%;
-      color: whitesmoke;
       font-size: 25px;
-    }
-    .link-buttons button:hover {
-      border-bottom: 2px solid whitesmoke;
-      transition: 0.3s;
-      color: white;
-    }
-    .link-buttons button:active {
-      border-bottom: 2px solid whitesmoke;
-      transition: 0.3s;
-      color: white;
     }
     /* end */
 
     /* about */
     .about-row {
-      background-size: cover;
-      height: 100%;
-      width: 100%;
-      padding: 3% 0 0 0;
-    }
-    .about {
-      padding: 5% 0 5% 0;
-    }
-    #about {
-      bottom: -340px;
-    }
-    .image-container {
-      padding: 5% 0 0 8%;
-    }
-    .image-container img {
-      margin: 0;
-      border-radius: 50%;
+      margin: auto;
     }
     .about h1 {
-      padding-top: 2%;
-      margin-top: 0;
-      margin-bottom: 2%;
-      text-align: center;
-      text-transform: uppercase;
-      font-size: 5rem;
+      font-size: 3.5rem;
     }
     .about p {
-      font-size: 25px;
-      margin-left: 10%;
-      margin-right: 10%;
-      text-align: center;
+      font-size: 21px;
     }
-
-    .skills-container {
-      padding-top: 2%;
-    }
-    .skills-row {
-      padding: 0 0 6% 0;
-    }
-    .skills div {
-      width: 100%;
-      background: rgb(49, 49, 49);
-      height: 24px;
-      border-radius: 4px;
-      position: relative;
-      overflow: hidden;
-    }
-    .python-bar::before {
-      content: '';
-      position: absolute;
-      width: 75%;
-      height: 24px;
-      left: 0;
-      background: rgb(216, 215, 215);
-    }
-    .html-bar::before {
-      content: '';
-      position: absolute;
-      width: 90%;
-      height: 24px;
-      left: 0;
-      background: rgb(216, 215, 215);
-    }
-    .css-bar::before {
-      content: '';
-      position: absolute;
-      width: 80%;
-      height: 24px;
-      left: 0;
-      background: rgb(216, 215, 215);
-    }
-    .django-bar::before {
-      content: '';
-      position: absolute;
-      width: 70%;
-      height: 24px;
-      left: 0;
-      background: rgb(216, 215, 215);
-    }
-    .postgres-bar::before {
-      content: '';
-      position: absolute;
-      width: 70%;
-      height: 24px;
-      left: 0;
-      background: rgb(216, 215, 215);
-    }
-    .heroku-bar::before {
-      content: '';
-      position: absolute;
-      width: 75%;
-      height: 24px;
-      left: 0;
-      background: rgb(216, 215, 215);
+    .image-container {
+      padding: 2%;
     }
     /* end */
 
     /* projects */
-    .projects {
-      padding-top: 5%;
-      padding-bottom: 5%;
-      position: relative;
-      /* background: rgb(242, 242, 230); */
-      transition: all 1500ms;
-      will-change: background;
-      margin-top: -340px;
-      bottom: -340px;
-    }
     .projects h1 {
-      font-size: 5rem;
-      text-align: center;
-      text-transform: uppercase;
+      font-size: 3.5rem;
     }
-    .project-row {
-      padding: 10% 0 10% 0;
+    .project-row img {
+      margin: auto;
+    }
+    .project-info {
+      margin-top: 4%;
     }
     .traffic {
-      max-width: 300px;
-      height: 300px;
+      max-width: 150px;
+      height: 150px;
     }
     .meal {
-      max-width: 300px;
-      height: 300px; 
-      float: right;
+      max-width: 150px;
+      height: 150px; 
+      float: none;
     }
     .camera {
-      max-width: 300px;
-      height: 300px;
+      max-width: 150px;
+      height: 150px;
     }
     .project-title {
-      font-size: 4rem;
+      font-size: 3rem;
       font-weight: bold;
     }
     .project-role {
-      font-size: 25px;
+      font-size: 21px;
       font-style: italic;
     }
     .project-description {
-      font-size: 25px;
+      font-size: 21px;
     }
     .project-languages {
-      font-size: 20px;
+      font-size: 18px;
     }
     /* end */
 
     /* contact */
-    .contact {
-      background: url("../img/bg/social.jpg") no-repeat center center fixed;
-      background-size: cover;
-      background-attachment: fixed;
-      color: whitesmoke;
-      height: 820px;
-      padding-top: 340px;
-      position: inherit;
-      z-index: -1;
-    }
-    .contact-container {
-      padding: 4% 0;
-      height: 100%;
-      background-color: rgba(70, 70, 70, 0.5);
-    }
     .contact h1 {
-      text-align: center;
-      text-transform: uppercase;
-      font-size: 4em;
+      font-size: 2.5em;
     }
     .contact h2 {
-      margin-top: 4%;
-    }
-    .contact #title {
-      width: 20%;
+      font-size: 22px;;
     }
     .contact button {
-      background-color: transparent;
-      border: 0;  
-      border-radius: 0;
-      margin-left: 36%;;
-      color: rgb(255, 225, 131);
-      font-size: 25px;
-      padding-bottom: 1%;
-    }
-    .contact button:hover {
-      background-color: transparent;
-      border-bottom: 2px solid whitesmoke;
-      transition: 0.3s;
-      color: white;
+      margin: auto;
+      display: flex;
+      justify-content: center;
     }
     .social {
-      margin: 3% 0 3% 0;
-      padding: 0 0 0 42.5%;
+      padding: 0 0 0 35%;
     }
-    .social a {
-      float: none;
-    }
-    .social img {
-      display: inline-block;
-      margin-left: 2%;
-      margin-right: 2%;
-      height: 50px;
-      text-align: center;
+    #contact-text {
+      margin-top: 10%;
     }
     /* end */
 
     /* footer */
     .footer {
-      position: relative;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      background-color: rgba(0, 0, 0, 0.856);
-      color: white;
-      text-align: center;
-      font-size: 20px;
-      height: 60px;
+      font-size: 16px;
     }
     .footer p {
-      padding-top: 1%;
+      padding-top: 3%;
+    }
+    /* end */
+  }
+
+  @media screen
+  and (min-device-width: 320px) 
+  and (max-device-width: 419px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    /* navbar */
+    .navbar-collapse {
+      padding: 0;
+    }
+    .navbar-collapse>.navbar-nav {
+      width: 100%;
+      text-align: center;
+      margin: auto;
+    }
+    /* end */
+    
+    /* home */
+    .home {
+      height: 400px;
+      /* background-size: 200%; */
+      background-position-x: 50%;
+      background-position-y: -5%;
+    }
+    .home-hr.top {
+      display: none;
+    }
+    .home h1 {
+      font-size: 2em;
+      line-height: 50px;
+    }
+    .home h2 {
+      font-size: 20px;
+    }
+    .link-buttons button {
+      font-size: 20px;
     }
     /* end */
 
-    /* modal */
-    .modal-dialog {
-      width: 80%;
+    /* about */
+    .about-row {
+      margin: auto;
     }
-    button.close {
-      font-size: 45px;
-      padding: 0 1%;
+    .image-container {
+      padding: 2%;
+      margin: auto;
+      margin-bottom: 4%;
+    }
+    .about {
+      /* margin-top: 10%; */
+    }
+    .about h1 {
+      font-size: 3.5rem;
+    }
+    .about p {
+      font-size: 21px;
     }
     /* end */
-}
+
+    /* projects */
+    .projects h1 {
+      font-size: 3.5rem;
+    }
+    .project-row img {
+      margin: auto;
+    }
+    .project-info {
+      margin-top: 4%;
+    }
+    .traffic {
+      max-width: 150px;
+      height: 150px;
+    }
+    .meal {
+      max-width: 150px;
+      height: 150px; 
+      float: none;
+    }
+    .camera {
+      max-width: 150px;
+      height: 150px;
+    }
+    .project-title {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    .project-role {
+      font-size: 21px;
+      font-style: italic;
+    }
+    .project-description {
+      font-size: 21px;
+    }
+    .project-languages {
+      font-size: 18px;
+    }
+    /* end */
+
+    /* contact */
+    .contact h1 {
+      font-size: 2em;
+    }
+    .contact h2 {
+      font-size: 18px;;
+    }
+    .contact button {
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      font-size: 20px;
+    }
+    .social {
+      padding: 0 0 0 30%;
+    }
+    .social img {
+      height: 40px;
+    }
+    #contact-text {
+      margin-top: 20%;
+    }
+    /* end */
+
+    /* footer */
+    .footer {
+      font-size: 15px;
+      height: 50px;
+    }
+    .footer p {
+      padding-top: 5%;
+    }
+    /* end */
+  }
