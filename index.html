@@ -27,7 +27,7 @@
       <div class="home-text">
         <hr class="home-hr">
         <h1>Gitu Mbugua</h1>
-        <h2>web developer |
+        <h2><span id="web-dev">web developer </span>|
           <div class="animation">
             <ul class="scroll-list">
               <li class="scroll-words">creative</li>
@@ -78,147 +78,156 @@
         </div>
       </div>
     </div>
-    <div class="m-scene" id="main">
-      <div class="m-header scene_element scene_element--fadein">
-        <div class="projects" id="projects">
-          <div class="container">
-            <h1 class="projects-title">Projects</h1>
-            <div class="row project-row" id="one" data-color="rgb(242, 242, 230)">
 
-              <div class="container-fluid col-md-6 col-lg-6 parallax-layer one">
-                <div class="project-overlay"></div>
-                <img src="img/traffic.png" alt="Traffic Tracker Project" class="img-responsive traffic">
-              </div>
-              <div class="col-md-6 col-lg-6 parallax-layer two">
+    <div class="projects" id="projects">
+      <div class="container">
+        <h1 class="projects-title">Projects</h1>
+        <div class="row project-row" id="one" data-color="rgb(242, 242, 230)">
 
-                <!-- Modal -->
-                  <div id="trafficTracker" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                      <div class="modal-content">
-                        <div id="carousel-slide" class="carousel slide" data-ride="carousel">
-                  
-                          <!-- Wrapper for slides -->
-                          <div class="carousel-inner">
-                            <div class="item active">
-                              <img src="img/traffic-tracker1.png" alt="Traffic Tracker Screenshot" class="img-responsive">
-                              <div class="carousel-caption">
-                                Home Page
-                              </div>
-                            </div>
-                            <div class="item">
-                              <img src="img/traffic-tracker2.png" alt="Traffic Tracker Screenshot" class="img-responsive">
-                              <div class="carousel-caption">
-                                Home Page Map
-                              </div>
-                            </div>
-                            <div class="item">
-                              <img src="img/traffic-tracker3.png" alt="Traffic Tracker Screenshot" class="img-responsive">
-                              <div class="carousel-caption">
-                                Route Details
-                              </div>
-                            </div>
-                          </div>
-                        
-                          <!-- Controls -->
-                          <a class="left carousel-control" href="#carousel-slide" role="button" data-slide="prev">
-                            <span class="glyphicon glyphicon-chevron-left"></span>
-                          </a>
-                          <a class="right carousel-control" href="#carousel-slide" role="button" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right"></span>
-                          </a>
+          <div class="container-fluid col-md-6 col-lg-6">
+            <div class="project-overlay"></div>
+            <img src="img/icon/traffic.png" alt="Traffic Tracker Project" class="img-responsive traffic">
+          </div>
+          <div class="col-md-6 col-lg-6">
+
+            <!-- Modal -->
+              <div id="trafficTracker" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div id="carousel-slide" class="carousel slide" data-ride="carousel">
+              
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner">
+                        <div class="item active">
+                          <img src="img/project/traffic-tracker1.png" alt="Traffic Tracker Screenshot" class="img-responsive">
+                        </div>
+                        <div class="item">
+                          <img src="img/project/traffic-tracker2.png" alt="Traffic Tracker Screenshot" class="img-responsive">
+                        </div>
+                        <div class="item">
+                          <img src="img/project/traffic-tracker3.png" alt="Traffic Tracker Screenshot" class="img-responsive">
                         </div>
                       </div>
+                    
+                      <!-- Controls -->
+                      <a class="left carousel-control" href="#carousel-slide" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                      </a>
+                      <a class="right carousel-control" href="#carousel-slide" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                      </a>
                     </div>
                   </div>
-                  <!-- End of modal -->
-                <h3 class="project-title">Traffic Tracker</h3>
-                <h5 class="project-role">Role: Front-End Development</h5>
-                <p class="project-description">Traffic Tracker is a user-friendly web application for tracking different traffic routes and updates news on them.</p>
-                <h4 class="project-languages">EmberJS &bull; Javascript &bull; HTML &bull; CSS</h4>
-                <a href="#" data-toggle="modal" data-target="#trafficTracker"><em>See more...</em></a>
-              </div>
-            </div>
-
-            <div class="row project-row" id="two" data-color="rgb(255, 225, 131)">
-              <div class="col-md-6 col-lg-6">
-                <!-- Modal -->
-                
-                <!-- End of modal -->
-                <h3 class="project-title">Meal Tracker</h3>
-                <h5 class="project-role">Role: Full-stack Developer</h5>
-                <p class="project-description">Meal Tracker quick and simple application with a neat and easy-to-use interface for logging calories consumed in a day</p>
-                <h4 class="project-languages">AngularJS &bull; Typescript &bull; Javascript &bull; HTML &bull; CSS</h4>
-                <!-- <a href="#" data-toggle="modal" data-target="#mealTracker"><em>See more...</em></a> -->
-              </div>
-              <div class="col-md-6 col-lg-6">
-                <img src="img/meal-tracker.png" alt="Meal Tracker Project" class="img-responsive meal">
-              </div>
-            </div>
-            <div class="row project-row" id="three" data-color="rgb(255, 225, 131)">
-              <div class="col-md-6 col-lg-6">
-                <img src="img/camera.png" alt="Unsplash Clone Project" class="img-responsive camera">
-              </div>
-              <div class="col-md-6 col-lg-6">
-                <!-- Modal -->
-                <div id="unsplash" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                      <div id="carousel-slide" class="carousel slide" data-ride="carousel">
-                  
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner">
-                          <div class="item active">
-                            <img src="img/unsplash1.png" alt="Unsplash Screenshot" class="img-responsive">
-                            <div class="carousel-caption">
-                                Home Page
-                              </div>
-                            </div>
-                            <div class="item">
-                              <img src="img/unsplash2.png" alt="Unsplash Screenshot" class="img-responsive">
-                              <div class="carousel-caption">
-                                Image details
-                              </div>
-                            </div>
-                          </div>
-                          
-                          <!-- Controls -->
-                          <a class="left carousel-control" href="#carousel-slide" role="button" data-slide="prev">
-                            <span class="glyphicon glyphicon-chevron-left"></span>
-                          </a>
-                          <a class="right carousel-control" href="#carousel-slide" role="button" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right"></span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- End of modal -->
-                  <h3 class="project-title">Unsplash Clone</h3>
-                  <h5 class="project-role">Role: Full-stack Developer</h5>
-                  <p class="project-description">Unsplash Clone is a web application for free image sharing. It has a simple, elegant design and is fully responsive.</p>
-                  <h4 class="project-languages">Django &bull; Python &bull; HTML &bull; CSS</h4>
-                  <a href="#" data-toggle="modal" data-target="#unsplash"><em>See more...</em></a>
                 </div>
               </div>
-              
-            </div>
+              <!-- End of modal -->
+            <h3 class="project-title">Traffic Tracker</h3>
+            <h5 class="project-role">Role: Front-End Development</h5>
+            <p class="project-description">A user-friendly web application that tracks different traffic routes and provides news updates on them.</p>
+            <h4 class="project-languages">EmberJS &bull; Javascript &bull; HTML &bull; CSS</h4>
+            <a href="#" data-toggle="modal" data-target="#trafficTracker"><em>See more...</em></a>
           </div>
         </div>
+
+        <div class="row project-row" id="two" data-color="rgb(242, 242, 230)">
+          <div class="col-md-6 col-lg-6">
+            <!-- Modal -->
+            <div id="trafficTracker" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div id="carousel-slide" class="carousel slide" data-ride="carousel">
+              
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner">
+                        <div class="item active">
+                          <img src="img/project/meal-tracker1.png" alt="Meal Tracker Screenshot" class="img-responsive">
+                        </div>
+                        <div class="item">
+                          <img src="img/project/meal-tracker2.png" alt="Meal Tracker Screenshot" class="img-responsive">
+                        </div>
+                        <div class="item">
+                          <img src="img/project/meal-tracker3.png" alt="Meal Tracker Screenshot" class="img-responsive">
+                        </div>
+                      </div>
+                    
+                      <!-- Controls -->
+                      <a class="left carousel-control" href="#carousel-slide" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                      </a>
+                      <a class="right carousel-control" href="#carousel-slide" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!-- End of modal -->
+            <h3 class="project-title">Meal Tracker</h3>
+            <h5 class="project-role">Role: Full-stack Developer</h5>
+            <p class="project-description">A quick and simple application with a neat and easy-to-use interface for logging the number of calories consumed in a day</p>
+            <h4 class="project-languages">AngularJS &bull; Typescript &bull; Javascript &bull; HTML &bull; CSS</h4>
+            <!-- <a href="#" data-toggle="modal" data-target="#mealTracker"><em>See more...</em></a> -->
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <img src="img/icon/meal-tracker.png" alt="Meal Tracker Project" class="img-responsive meal">
+          </div>
+        </div>
+        <div class="row project-row" id="three" data-color="rgb(255, 225, 131)">
+          <div class="col-md-6 col-lg-6">
+            <img src="img/icon/camera.png" alt="Unsplash Clone Project" class="img-responsive camera">
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <!-- Modal -->
+            <div id="unsplash" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div id="carousel-slide" class="carousel slide" data-ride="carousel">
+              
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                      <div class="item active">
+                        <img src="img/project/unsplash1.png" alt="Unsplash Screenshot" class="img-responsive">
+                        </div>
+                        <div class="item">
+                          <img src="img/project/unsplash2.png" alt="Unsplash Screenshot" class="img-responsive">
+                        </div>
+                      </div>
+                      
+                      <!-- Controls -->
+                      <a class="left carousel-control" href="#carousel-slide" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                      </a>
+                      <a class="right carousel-control" href="#carousel-slide" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End of modal -->
+              <h3 class="project-title">Unsplash Clone</h3>
+              <h5 class="project-role">Role: Full-stack Developer</h5>
+              <p class="project-description">A web application for free image sharing. It has a simple, elegant design and is fully responsive.</p>
+              <h4 class="project-languages">Django &bull; Python &bull; HTML &bull; CSS</h4>
+              <a href="#" data-toggle="modal" data-target="#unsplash"><em>See more...</em></a>
+            </div>
+          </div>
+          
+        </div>
       </div>
-      
       
       <div class="contact" id="contact">
       <div class="contact-container">
        <div class="container">
         <h1>Let's get in touch.</h1>
         <hr id="title">
-        <h2 class="text-center">If you like my work and would like to talk, you are welcome to contact me.</h2>
+        <h2 class="text-center">Would you like to work together or know more about a project? You are welcome to contact me.</h2>
         <a href="mailto:gmbugua38@gmail.com"><button class="btn btn-default btn-lg email">gmbugua38@gmail.com</button></a>
 
         <div class="social">
           <!-- <a href="mailto:gmbugua38@gmail.com"><img src="img/gmail.png" alt="Gmail" class="img-responsive gmail"></a> -->
-          <a href="https://github.com/GituMbugua"><img src="img/github.png" alt="Github" class="img-responsive github"></a>
-          <a href="https://www.linkedin.com/in/gitu-mbugua-8b6555156/"><img src="img/linkedin.png" alt="LinkedIn" class="img-responsive linkedin"></a>
+          <a href="https://github.com/GituMbugua"><img src="img/icon/github.png" alt="Github" class="img-responsive github"></a>
+          <a href="https://www.linkedin.com/in/gitu-mbugua-8b6555156/"><img src="img/icon/linkedin.png" alt="LinkedIn" class="img-responsive linkedin"></a>
         </div>
       </div>
        </div>

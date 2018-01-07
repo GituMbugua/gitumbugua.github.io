@@ -72,6 +72,7 @@ u++;
 
 // end of word substitution
 
+// change background color
 $(window).on("scroll touchmove", function() {
   if ($(document).scrollTop() >= $("#one").position().top) {
     $('.projects').css('background', $("#one").attr("data-color"));
@@ -83,3 +84,4 @@ $(window).on("scroll touchmove", function() {
     $('.projects').css('background', $("#three").attr("data-color"))
   };
 });
+// end of change background color
