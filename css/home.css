@@ -44,13 +44,21 @@ body, html {
     
     /* home section */
     .home {
-      background: url("../img/bg/desk-bg.jpg") no-repeat;
+      background: url("../img/bg/desk-bg.jpeg") no-repeat;
       background-size: cover;
       background-attachment: fixed;
       height: 100%;
       width: 100%;
       overflow: hidden;
       z-index: -1;
+      background-position-y: 20%; 
+    }
+    .home-overlay {
+      background-color: rgba(0, 0, 0, 0.4);
+      position: absolute;
+      height: inherit;
+      width: 100%;
+      z-index: 0;
     }
     .home-text {
       position: relative;
@@ -75,13 +83,6 @@ body, html {
     .home-hr {
       transform: dotted;
       width: 65%;
-    }
-    .home-overlay {
-      background-color: rgba(0, 0, 0, 0.3);
-      position: absolute;
-      height: inherit;
-      width: 100%;
-      z-index: 0;
     }
     .animation {
       vertical-align: sub;
@@ -283,6 +284,16 @@ body, html {
     .project-languages {
       font-size: 20px;
     }
+    .modal-backdrop.in {
+      opacity: 0.9;
+    }
+    .modal.fade .closebtn {
+      position: absolute;
+      top: -10px;
+      right: 10px;
+      font-size: 60px;
+      color: whitesmoke;
+  }
     /* end */
 
     /* contact */
@@ -373,6 +384,23 @@ body, html {
     /* end */
 
 /* ======================= media queries ============================================================================================ */
+@media screen
+  and (device-width: 1280px), 
+  screen and (device-height: 800px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .about {
+      padding: 5% 0 3% 0;
+    }
+    .about-row {
+      height: 450px;
+    }
+    .about h1 {
+      font-size: 3em;
+    }
+    .about p {
+      font-size: 21px;
+    }
+  }
 
 @media screen
   and (min-device-width: 992px) 
@@ -425,6 +453,9 @@ body, html {
   and (max-device-width: 991px)
   and (-webkit-min-device-pixel-ratio: 1) {
     /* home */
+    .home {
+      background-position-x: 40%;
+    }
     .home-text {
       padding-top: 25%;
     }
@@ -461,6 +492,9 @@ body, html {
     .camera {
       max-width: 200px;
       height: 200px;
+    }
+    .modal.in .modal-dialog {
+      margin-top: 30%;
     }
     /* end */
 
@@ -503,6 +537,12 @@ body, html {
       width: 100%;
       text-align: center;
       margin: auto;
+    }
+    /* end */
+
+    /* home */
+    .home {
+      background-position-x: 45%;
     }
     /* end */
 
@@ -603,7 +643,8 @@ body, html {
     .home {
       height: 450px;
       background-size: 180%;
-      background-position-x: 50%;
+      background-position-x: 45%;
+      background-position-y: -15%;
     }
     .home-hr.top {
       display: none;
@@ -719,7 +760,7 @@ body, html {
     /* home */
     .home {
       height: 400px;
-      /* background-size: 200%; */
+      background-size: 200%;
       background-position-x: 50%;
       background-position-y: -5%;
     }
