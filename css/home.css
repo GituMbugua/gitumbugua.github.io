@@ -173,61 +173,21 @@ body, html {
       position: relative;
       overflow: hidden;
     }
+    .skills-panel {
+      display: flex;
+      justify-content: space-between;
+    }
+    .skills-div {
+      width: 16%;
+    }
     .skills-list {
       list-style: none;
+      width: 100%;
       font-size: 22px;
       padding: 0;
     }
     .skills-list li {
       padding: 2%;
-    }
-    .python-bar::before {
-      content: '';
-      position: absolute;
-      width: 75%;
-      height: 24px;
-      left: 0;
-      background: rgb(216, 215, 215);
-    }
-    .html-bar::before {
-      content: '';
-      position: absolute;
-      width: 90%;
-      height: 24px;
-      left: 0;
-      background: rgb(216, 215, 215);
-    }
-    .css-bar::before {
-      content: '';
-      position: absolute;
-      width: 80%;
-      height: 24px;
-      left: 0;
-      background: rgb(216, 215, 215);
-    }
-    .django-bar::before {
-      content: '';
-      position: absolute;
-      width: 70%;
-      height: 24px;
-      left: 0;
-      background: rgb(216, 215, 215);
-    }
-    .postgres-bar::before {
-      content: '';
-      position: absolute;
-      width: 70%;
-      height: 24px;
-      left: 0;
-      background: rgb(216, 215, 215);
-    }
-    .heroku-bar::before {
-      content: '';
-      position: absolute;
-      width: 75%;
-      height: 24px;
-      left: 0;
-      background: rgb(216, 215, 215);
     }
     /* end */
 
@@ -412,6 +372,16 @@ body, html {
     }
     /* end */
 
+    /* about */
+    .skills-panel {
+      display: flex;
+      justify-content: space-between;
+    }
+    .skills-div {
+      width: 19%;
+    }
+    /* end */
+
     /* projects */
     .traffic {
       max-width: 250px;
@@ -470,6 +440,15 @@ body, html {
     }
     .image-container img {
       margin: auto;
+    }
+    .skills-panel {
+      display: unset;
+    }
+    .skills-div {
+      width: 50%;
+    }
+    .skills-div li {
+      text-align: center;
     }
     /* end */
 
@@ -556,6 +535,15 @@ body, html {
     }
     .image-container img {
       margin: auto;
+    }
+    .skills-panel {
+      display: unset;
+    }
+    .skills-div {
+      width: 50%;
+    }
+    .skills-div li {
+      text-align: center;
     }
     /* end */
 
@@ -670,6 +658,15 @@ body, html {
     }
     .image-container {
       padding: 2%;
+    }
+    .skills-panel {
+      display: unset;
+    }
+    .skills-div {
+      width: 50%;
+    }
+    .skills-div li {
+      text-align: center;
     }
     /* end */
 
@@ -801,6 +798,15 @@ body, html {
       list-style: none;
       font-size: 18px;
       padding: 0;
+    }
+    .skills-panel {
+      display: unset;
+    }
+    .skills-div {
+      width: 50%;
+    }
+    .skills-div li {
+      text-align: center;
     }
     /* end */
 
