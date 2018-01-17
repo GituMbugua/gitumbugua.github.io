@@ -243,17 +243,42 @@ body, html {
     }
     .project-languages {
       font-size: 20px;
+      color: rgb(59, 59, 59);
+    }
+    /* end */
+    
+    /* modal */
+    .project-name {
+      color: whitesmoke;
+      top: 2%;
     }
     .modal-backdrop.in {
       opacity: 0.9;
     }
-    .modal.fade .closebtn {
+    .modal.fade .close {
       position: absolute;
-      top: -10px;
       right: 10px;
       font-size: 60px;
       color: whitesmoke;
-  }
+      border: none;
+    }
+    .modal.fade .close span {
+      color: white;
+      background: transparent;
+    }
+    .modal-dialog {
+      width: 100%;
+    }
+    .modal.in .modal-dialog {
+      margin-top: 8%;
+    }
+    button.close {
+      font-size: 45px;
+      padding: 0 1%;
+    }
+    .site-link {
+      float: right;
+    }
     /* end */
 
     /* contact */
@@ -333,16 +358,6 @@ body, html {
     }
     /* end */
 
-    /* modal */
-    .modal-dialog {
-      width: 80%;
-    }
-    button.close {
-      font-size: 45px;
-      padding: 0 1%;
-    }
-    /* end */
-
 /* ======================= media queries ============================================================================================ */
 @media screen
   and (device-width: 1280px), 
@@ -350,6 +365,11 @@ body, html {
   and (-webkit-min-device-pixel-ratio: 1) {
     .about {
       padding: 5% 0 3% 0;
+    }
+    #about {
+      position: relative;
+      margin-top: -200px;
+      bottom: -200px;
     }
     .about-row {
       height: 450px;
@@ -360,7 +380,24 @@ body, html {
     .about p {
       font-size: 21px;
     }
+    .skills-panel {
+      display: flex;
+      justify-content: space-between;
+    }
+    .skills-div {
+      width: 19%;
+    }
+
+    .projects {
+      bottom: -200px;
+    }
+
+    .contact {
+      height: 670px;
+      padding-top: 200px;
+    }
   }
+  
 
 @media screen
   and (min-device-width: 992px) 
@@ -582,6 +619,9 @@ body, html {
     }
     .project-languages {
       font-size: 18px;
+    }
+    .modal.in .modal-dialog {
+      margin-top: 30%;
     }
     /* end */
 
@@ -846,6 +886,9 @@ body, html {
     }
     .project-languages {
       font-size: 18px;
+    }
+    .modal.in .modal-dialog {
+      margin-top: 30%;
     }
     /* end */
 
