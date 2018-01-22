@@ -275,9 +275,15 @@ body, html {
     button.close {
       font-size: 45px;
       padding: 0 1%;
+      color: white;
     }
     .site-link {
       float: right;
+      color: whitesmoke;
+      font-size: 2.5rem;
+    }
+    .site-link:hover {
+      border-bottom: 2px solid;
     }
     /* end */
 
@@ -324,6 +330,9 @@ body, html {
       border-bottom: 2px solid whitesmoke;
       transition: 0.3s;
       color: white;
+    }
+    .a:focus, a:hover {
+      text-decoration: none;
     }
     .social {
       margin: 3% 0 3% 0;
@@ -495,6 +504,7 @@ body, html {
     }
     .project-info {
       margin-top: 4%;
+      text-align: center;
     }
     .traffic {
       max-width: 200px;
@@ -593,6 +603,7 @@ body, html {
     }
     .project-info {
       margin-top: 4%;
+      text-align: center;
     }
     .traffic {
       max-width: 200px;
@@ -719,6 +730,7 @@ body, html {
     }
     .project-info {
       margin-top: 4%;
+      text-align: center;
     }
     .traffic {
       max-width: 150px;
@@ -859,6 +871,7 @@ body, html {
     }
     .project-info {
       margin-top: 4%;
+      text-align: center;
     }
     .traffic {
       max-width: 150px;
