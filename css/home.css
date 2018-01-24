@@ -44,7 +44,7 @@ body, html {
     
     /* home section */
     .home {
-      background: url("../img/bg/desk-bg.jpeg") no-repeat;
+      background: url("../img/bg/desk-bg.jpg") no-repeat;
       background-size: cover;
       background-attachment: fixed;
       height: 100%;
