@@ -251,6 +251,7 @@ body, html {
     .project-name {
       color: whitesmoke;
       top: 2%;
+      display: inline;
     }
     .modal-backdrop.in {
       opacity: 0.9;
@@ -278,6 +279,7 @@ body, html {
       color: white;
     }
     .site-link {
+      display: inline;
       float: right;
       color: whitesmoke;
       font-size: 2.5rem;
