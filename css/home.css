@@ -24,7 +24,7 @@ body, html {
       color: whitesmoke;
     }
     .navbar-nav {
-      display: inline-block;
+      /* display: inline-block; */
       float: right;
       vertical-align: top;
       list-style: none;
@@ -129,8 +129,8 @@ body, html {
     }
     #about {
       position: relative;
-      margin-top: -340px;
-      bottom: -340px;
+      /* margin-top: -340px;
+      bottom: -340px; */
     }
     .image-container {
       padding: 5% 0 0 8%;
@@ -196,9 +196,8 @@ body, html {
       padding-top: 5%;
       padding-bottom: 5%;
       position: relative;
-      transition: all 1500ms;
-      will-change: background;
-      bottom: -340px;
+      /* will-change: background; */
+
     }
     .projects h1 {
       font-size: 5rem;
@@ -291,14 +290,36 @@ body, html {
     }
     /* end */
 
+    /* pitch */
+    .pitch {
+      position: relative;
+      background-color: rgb(242, 242, 230);
+      padding: 3% 0 4% 0;
+    }
+    .pitch .container {
+      display: flex;
+      flex-direction: column;
+    }
+    .pitch h1 {
+      font-size: 5rem;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .pitch .video {
+      margin: auto;
+      margin-top: 2%;
+      border-radius: 5px;
+    }
+    /* end */
+
     /* contact */
     .contact {
       background: url("../img/bg/social.jpg") no-repeat center center fixed;
       background-size: cover;
       background-attachment: fixed;
       color: whitesmoke;
-      height: 820px;
-      padding-top: 340px;
+      /* height: 820px; */
+      /* padding-top: 340px; */
       position: inherit;
       z-index: -1;
     }
@@ -381,8 +402,8 @@ body, html {
     }
     #about {
       position: relative;
-      margin-top: -200px;
-      bottom: -200px;
+      /* margin-top: -200px; */
+      /* bottom: -200px; */
     }
     .about-row {
       height: 450px;
@@ -401,9 +422,9 @@ body, html {
       width: 19%;
     }
 
-    .projects {
+    /* .projects {
       bottom: -200px;
-    }
+    } */
 
     .contact {
       height: 670px;
@@ -644,9 +665,9 @@ body, html {
     .contact h1 {
       font-size: 3.5em;
     }
-    .contact h2 {
-      /* font-size: em; */
-    }
+    /* .contact h2 {
+      font-size: em;
+    } */
     .contact #title {
       width: 30%;
     }
@@ -841,9 +862,9 @@ body, html {
       margin: auto;
       margin-bottom: 4%;
     }
-    .about {
-      /* margin-top: 10%; */
-    }
+    /* .about {
+      margin-top: 10%;
+    } */
     .about h1 {
       font-size: 3.5rem;
     }

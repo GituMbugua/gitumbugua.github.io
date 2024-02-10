@@ -26,8 +26,9 @@
       <div class="navbar-collapse collapse" id="navbar-collapse">
         <ul class="nav navbar-nav">
           <li class="nav-item active" data-toggle="collapse" data-target="#navbar-collapse"><a class="scroll" href="#home"><h4>Home</h4></a></li>
-          <li class="nav-item" data-toggle="collapse" data-target="#navbar-collapse"><a class="scroll" href="#about"><h4>About Me</h4></a></li>
-          <li class="nav-item" data-toggle="collapse" data-target="#navbar-collapse"><a class="scroll" href="#projects"><h4>Projects</h4></a></li>
+          <li class="nav-item" data-toggle="collapse" data-target="#navbar-collapse"><a class="scroll" href="#about"><h4>Bio</h4></a></li>
+          <li class="nav-item" data-toggle="collapse" data-target="#navbar-collapse"><a class="scroll" href="#projects"><h4>Portfolio</h4></a></li>
+          <li class="nav-item" data-toggle="collapse" data-target="#navbar-collapse"><a class="scroll" href="#pitch"><h4>Elevator Pitch</h4></a></li>
           <li class="nav-item" data-toggle="collapse" data-target="#navbar-collapse"><a class="scroll" href="#contact"><h4>Contact</h4></a></li>
         </ul>
       </div>
@@ -38,7 +39,7 @@
       <div class="home-text">
         <hr class="home-hr top">
         <h1>Gitu Mbugua</h1>
-        <h2><span id="web-dev">Web Developer </span>|
+        <h2><span id="web-dev">Software Developer </span>|
           <div class="animation">
             <ul class="scroll-list">
               <li class="scroll-words">Creative</li>
@@ -50,8 +51,9 @@
         </h2>
         <hr class="home-hr bottom">
         <div class="link-buttons">
-          <a class="scroll" href="#about"><button class="btn btn-lg">About Me</button></a>
-          <a class="scroll" href="#projects"><button class="btn btn-lg">Projects</button></a>
+          <a class="scroll" href="#about"><button class="btn btn-lg">Bio</button></a>
+          <a class="scroll" href="#projects"><button class="btn btn-lg">Portfolio</button></a>
+          <a class="scroll" href="#pitch"><button class="btn btn-lg">Elevator Pitch</button></a>
           <a class="scroll" href="#contact"><button class="btn btn-lg">Contact</button></a>
         </div>
       </div>
@@ -63,9 +65,9 @@
             <img src="img/me.jpg" alt="Gitu Mbugua" class="picture img-responsive">
         </div>
         <div class="about col-sm-12 col-md-7 col-lg-7">
-          <h1>About Me</h1>
-          <p>I'm Gitu, a web developer based in Nairobi. As a web developer, I have built some interactive applications. I'm keen on structure and simplicity in both design and code. I believe in being intentional about everything I do.</p>
-          <p>When I'm not coding, I enjoy sports like swimming and soccer, and making music with guitars and drums. Oh, and driving - gotta love a stick shift.</p>
+          <h1>Bio</h1>
+          <p>I'm Gitu, a Software developer based in Nairobi. As a Software developer, I have built some interactive applications. I'm keen on structure and efficiency in both design and code. I believe in being intentional about everything I do.</p>
+          <p>When I'm not coding, I enjoy sports like cycling and swimming, and making music with guitars and drums. Oh, and driving - gotta love a stick shift.</p>
         </div>
       </div>
       <div class="container skills-container">
@@ -74,17 +76,25 @@
           <div class="skills-panel">
             <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 skills-div">
               <ul class="skills-list">
-                <li>&#10004 HTML5</li>
-                <li>&#10004 CSS3</li>
-                <li>&#10004 Python</li>
+                <li>&#10004 AWS</li>
+                <li>&#10004 Docker</li>
+                <li>&#10004 Kubernetes</li>
               </ul>
             </div>
 
             <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 skills-div">
               <ul class="skills-list">
+                <li>&#10004 Python</li>
                 <li>&#10004 Django</li>
-                <li>&#10004 PostgreSQL</li>
                 <li>&#10004 Heroku</li>
+              </ul>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 skills-div">
+              <ul class="skills-list">
+                <li>&#10004 PostgreSQL</li>
+                <li>&#10004 Firebase</li>
+                <li>&#10004 Flask</li>
               </ul>
             </div>
 
@@ -96,13 +106,6 @@
               </ul>
             </div>
 
-            <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 skills-div">
-              <ul class="skills-list">
-                <li>&#10004 Ember</li>
-                <li>&#10004 Firebase</li>
-                <li>&#10004 Flask</li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>
@@ -110,60 +113,21 @@
 
     <div class="projects" id="projects">
       <div class="container">
-        <h1 class="projects-title">Projects</h1>
+        <h1 class="projects-title">Portfolio</h1>
+        
         <div class="row project-row" id="one" data-color="rgb(242, 242, 230)">
 
           <div class="container-fluid col-xs-12 col-sm-12 col-md-6 col-lg-6">
             <div class="project-overlay"></div>
-            <img src="img/icon/traffic.png" alt="Traffic Tracker Project" class="img-responsive traffic">
+            <img src="img/icon/mortarboard.png" alt="Menstrual Education Project" class="img-responsive traffic">
           </div>
           <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 project-info">
-
-            <!-- Modal -->
-              <div id="trafficTracker" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-
-                <div class="container">
-                  <div class="modal-dialog modal-lg">
-                      <div class="row">
-                        <h2 class="project-name">Traffic Tracker</h2>
-                        <a href="http://traffic-tracker-70c62.firebaseapp.com" target="blank"><h4 class="site-link">View site</h4></a>
-                      </div>
-                      <div class="modal-content">
-                        <div id="carousel-slide-one" class="carousel slide" data-ride="carousel">
-                          
-                          <!-- Wrapper for slides -->
-                          <div class="carousel-inner">
-                            <div class="item active">
-                              <img src="img/project/traffic-tracker1.jpg" alt="Traffic Tracker Screenshot" class="img-responsive">
-                            </div>
-                            <div class="item">
-                              <img src="img/project/traffic-tracker2.jpg" alt="Traffic Tracker Screenshot" class="img-responsive">
-                            </div>
-                            <div class="item">
-                              <img src="img/project/traffic-tracker3.jpg" alt="Traffic Tracker Screenshot" class="img-responsive">
-                            </div>
-                          </div>
-                        
-                          <!-- Controls -->
-                          <a class="left carousel-control" href="#carousel-slide-one" role="button" data-slide="prev">
-                            <span class="glyphicon glyphicon-chevron-left"></span>
-                          </a>
-                          <a class="right carousel-control" href="#carousel-slide-one" role="button" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right"></span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-              </div>
-              <!-- End of modal -->
-            <h3 class="project-title">Traffic Tracker</h3>
-            <h5 class="project-role">Role: Front-End Development</h5>
-            <p class="project-description">A user-friendly web application that tracks different traffic routes and provides news updates on them.</p>
-            <h4 class="project-languages">Technologies Used: EmberJS &bull; Javascript &bull; HTML &bull; CSS</h4>
-            <a href="#" data-toggle="modal" data-target="#trafficTracker"><button class="btn btn-default btn-lg see-more">See more</button></a>
+            <h3 class="project-title">Menstrual Awareness Education</h3>
+            <h5 class="project-role">Role: Project Manager</h5>
+            <p class="project-description">A proposed solution to raise awareness on the area of menstrual education - both for adolescent girls and their communities.</p>
+            <h4 class="project-languages"> <a href="https://drive.google.com/file/d/1TzG1VL7pk7o6z1h3W5D4MX946vWPELCL/view?usp=drive_link" target="_blank">Team Slide Deck</a></h4>
+            <h4 class="project-languages"> <a href="https://youtu.be/lVIv4VlGoyA" target="_blank">Team Video</a></h4>
+            <!-- <a href="#" data-toggle="modal" data-target="#trafficTracker"><button class="btn btn-default btn-lg see-more">See more</button></a> -->
           </div>
         </div>
 
@@ -325,7 +289,14 @@
           
         </div>
       </div>
-      
+     
+      <div class="pitch" id="pitch">
+        <div class="container">
+          <h1 class="projects-title">Elevator Pitch</h1>
+          <img class="video" src="img/coming_soon.jpg" alt="Video Coming Soon">
+        </div>
+      </div>
+
       <div class="contact" id="contact">
       <div class="contact-container">
        <div class="container" id="contact-text">
@@ -342,7 +313,7 @@
        </div>
     </div>
     <footer class="footer">
-      <p>&copy Gitu Mbugua - Web Developer 2018</p>
+      <p>&copy Gitu Mbugua - Software Developer 2024</p>
     </footer>
     
     <script src="bootstrap/js/jquery.js"></script>
