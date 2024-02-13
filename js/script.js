@@ -30,6 +30,16 @@ $(document).ready(function() {
         $(this).parent().siblings().removeClass('active');
       }
 
+      // Highlight the last link if the scrollbar is at the bottom of the page
+      var windowHeight = $(window).height();
+      var documentHeight = $(document).height();
+      console.log("Value: " + (scrollbarLocation + windowHeight) );
+      console.log("Document height: " + documentHeight);
+      if ((scrollbarLocation + windowHeight) >= documentHeight) {
+        $(this).parent().siblings().removeClass('active');
+        $(this).parent().addClass('active');
+      }
+
       // navbar fade-in/fade-out
       if (scrollbarLocation > 550) {
         $('.navbar').fadeIn();
@@ -85,3 +95,9 @@ $(window).on("scroll touchmove", function() {
   };
 });
 // end of change background color
+
+// current year in footer
+document.addEventListener('DOMContentLoaded', function() {
+  var currentYear = new Date().getFullYear();
+  document.getElementById('currentYear').textContent = currentYear;
+ });
